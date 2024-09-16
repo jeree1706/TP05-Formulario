@@ -33,8 +33,8 @@
     <h3>9. ¿Qué atributo se utiliza para definir un valor predeterminado en un campo de entrada de un formulario?</h3>
     <p>Se usa el atributo "value"</p>
     <h3>10. ¿Qué son los métodos / verbos de petición HTTP?</h3>
-    <p>Los métodos indican la acción que se desea realizar para un recurso determinado. Ejemplos: 
-        -GET: solicita una representación de un recurso específico 
+    <p>Los métodos indican la acción que se desea realizar para un recurso determinado. Ejemplos:
+        -GET: solicita una representación de un recurso específico
         -POST: se utiliza para enviar una entidad a un recurso en específico, causando a menudo un cambio en el estado o
         efectos secundarios en el servidor
     </p>
@@ -59,46 +59,83 @@
     </table>
     </p>
     <h3>Formulario</h3>
+    <h4>Temática: Autos</h4>
     <form action="/registro" method="post">
 
         <fieldset>
             <legend>Datos Personales</legend>
-            
-            <label for="nombre y apellido">Nombre y apellido:</label>
-            <input type="text" id="nombre y apellido" name="nombre y apellido" required>
-            
+
+            <label for="nombre_apellido">Nombre y apellido:</label>
+            <input type="text" id="nombre_apellido" name="nombre_apellido" required>
+
             <label for="email">Correo electrónico:</label>
             <input type="email" id="email" name="email" required>
-            
-            <label for="fecha de nacimiento">Fecha de nacimiento:</label>
-            <input type="date" id="fecha de nacimiento" name="fecha de nacimiento" required>
-            
-            <label for="edad">Edad:</label>
-            <input type="number" id="edad" name="edad" required>
-            
+
+            <label for="fecha_nacimiento">Fecha de nacimiento:</label>
+            <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
             <label for="DNI">DNI:</label>
             <input type="number" id="DNI" name="DNI" required>
-            
+
             <label for="telefono">Teléfono:</label>
             <input type="number" id="telefono" name="telefono" required>
-            
+
             <label for="usuario_x">Usuario de X:</label>
             <input type="text" id="usuario_x" name="usuario_x" required>
-            
+
             <label for="usuario_ig">Usuario de Instagram:</label>
             <input type="text" id="usuario_ig" name="usuario_ig" required>
-            
+
             <label for="ciudad">Ciudad:</label>
-            <input type="text" id="ciudad" name="ciudad" required> 
-            
+            <input type="text" id="ciudad" name="ciudad" required>
+
             <label for="provincia">Provincia:</label>
-            <input type="text" id="provincia" name="provincia" required> 
-            
-            
-            <select name="" id="">
-                <option value=""></option>
+            <select name="provincia" id="provincia">
+                <option value="">Seleccione una opción</option>
+                <option value="1">BS. AS.</option>
+                <option value="2">Rio Negro</option>
+                <option value="3">Neuquén</option>
+                <option value="4">La Pampa</option>
+                <option value="5">Chubut</option>
+                <option value="6">Mendoza</option>
+                <option value="7">San Luis</option>
+                <option value="8">Córdoba</option>
+                <option value="9">Santa Fe</option>
+                <option value="10">Entre Ríos</option>
+                <option value="11">San Juan</option>
+                <option value="12">La Rioja</option>
+                <option value="13">Catamarca</option>
+                <option value="14">Tucumán</option>
+                <option value="15">Sgo Del Estereo</option>
+                <option value="16">Chaco</option>
+                <option value="17">Corrientes</option>
+                <option value="18">Misiones</option>
+                <option value="19">Formosa</option>
+                <option value="20">Salta</option>
+                <option value="21">Jujuy</option>
+                <option value="22">Sta Cruz</option>
+                <option value="23">Tierra del Fuego</option>
             </select>
-            
+
+            <label for="pregunta">¿Cuál es su marca favorita de autos?</label>
+            <input type="text">
+
+
+            <label for="cant_puertas">¿Prefiere un auto de 2 o 4 puertas?</label>
+            <select name="cant_puertas" id="cant_puertas">
+                <option value="">Seleccione una opción</option>
+                <option value="1">2 puertas</option>
+                <option value="2">4 puertas</option>
+            </select>
+
+            <label for="color">¿Colores oscuros o claros?</label>
+            <select name="color" id="color">
+                <option value="">Seleccione una opción</option>
+                <option value="1">Oscuros</option>
+                <option value="2">Claros</option>
+
+            </select>
+
         </fieldset>
 
 </body>
